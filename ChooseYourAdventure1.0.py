@@ -120,22 +120,43 @@ class Story:
             self.fortify_school()
 
     def fight_zombies(self):
-        pass  # To be implemented
+        # To be implemented
+        pass
 
     def alternate_route(self):
-        pass  # To be implemented
+        print("You search for an alternate route, trying to avoid direct confrontation with the zombies.")
+        print("After wandering through the streets, you find a narrow alleyway that seems less infested.")
+        print("You cautiously make your way through, keeping an eye out for any threats.")
 
     def enter_building(self):
-        pass  # To be implemented
+        print("You enter the nearest building, hoping to find valuable supplies.")
+        print("As you explore the dark interior, you hear faint growling noises from deeper within the building.")
+        print("1. Proceed cautiously.")
+        print("2. Retreat and find another building.")
+        choice = input("What will you do? (1/2): ")
+
+        if choice == "1":
+            print("You continue cautiously, ready for any danger.")
+            # Implement further story development
+        elif choice == "2":
+            print("You retreat from the building, deciding it's too risky to explore.")
+            # Implement further story development
+        else:
+            print("Invalid choice.")
+            self.enter_building()
 
     def scout_area(self):
-        pass  # To be implemented
+        print("You cautiously scout the area, looking for any signs of danger.")
+        print("After a thorough inspection, you spot a nearby convenience store that seems promising.")
+        print("You decide to head towards it, hoping to find useful supplies.")
 
     def set_barricades(self):
-        pass  # To be implemented
+        print("You set up barricades at the entrances of the school, fortifying your position.")
+        print("With the barricades in place, you feel safer from potential zombie attacks.")
 
     def set_traps(self):
-        pass  # To be implemented
+        print("You carefully set traps in strategic locations around the school.")
+        print("These traps should help deter zombies and provide you with some protection.")
 
 # Starting the game
 game = Story()
