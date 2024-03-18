@@ -120,8 +120,19 @@ class Story:
             self.fortify_school()
 
     def fight_zombies(self):
-        # To be implemented
-        pass
+        print("You bravely face the zombies, ready to fight for your survival.")
+        print("Suddenly, you hear a loud roar as a wave of zombies rushes towards you!")
+        print("1. Stay and fight.")
+        print("2. Run away.")
+        choice = input("What will you do? (1/2): ")
+
+        if choice == "1":
+            self.stay_and_fight()
+        elif choice == "2":
+            self.run_away()
+        else:
+            print("Invalid choice.")
+            self.fight_zombies()
 
     def alternate_route(self):
         print("You search for an alternate route, trying to avoid direct confrontation with the zombies.")
@@ -157,6 +168,26 @@ class Story:
     def set_traps(self):
         print("You carefully set traps in strategic locations around the school.")
         print("These traps should help deter zombies and provide you with some protection.")
+
+    def stay_and_fight(self):
+        print("You decide to stay and fight the oncoming wave of zombies.")
+        print("As you prepare to engage, you see your friends from the nearby shelter rushing to your aid.")
+        print("Together, you manage to fight off the zombies and secure the area.")
+        print("Your friends suggest finding a safer shelter.")
+        self.find_shelter()
+
+    def run_away(self):
+        print("You decide to run away from the overwhelming horde of zombies.")
+        print("You sprint through the streets, desperately searching for safety.")
+        print("You stumble upon an abandoned warehouse and quickly barricade the entrance.")
+        print("You catch your breath, knowing you've narrowly escaped danger.")
+        # Implement further story development
+
+    def find_shelter(self):
+        print("You and your friends set out to find a safer shelter.")
+        print("After searching for a while, you come across an old underground bunker.")
+        print("You cautiously enter the bunker, relieved to have found a secure refuge.")
+        # Implement further story development
 
 # Starting the game
 game = Story()
