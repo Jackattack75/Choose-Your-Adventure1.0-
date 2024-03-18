@@ -74,20 +74,68 @@ class Story:
             self.outside_school()
 
     def city_center(self):
-        # This part of the story can be expanded further
         print("You decide to head towards the city center, hoping to find survivors or assistance.")
         print("As you make your way through the streets, you encounter hordes of zombies.")
         print("You must fight your way through or find another route.")
+        print("1. Fight your way through.")
+        print("2. Look for an alternate route.")
+        choice = input("What will you do? (1/2): ")
+
+        if choice == "1":
+            self.fight_zombies()
+        elif choice == "2":
+            self.alternate_route()
+        else:
+            print("Invalid choice.")
+            self.city_center()
 
     def search_supplies(self):
-        # This part of the story can be expanded further
         print("You choose to search for supplies in nearby buildings, scavenging for food, weapons, and shelter.")
         print("Be cautious, as zombies may be lurking in the shadows.")
+        print("1. Enter the nearest building.")
+        print("2. Scout the area before entering any building.")
+        choice = input("What will you do? (1/2): ")
+
+        if choice == "1":
+            self.enter_building()
+        elif choice == "2":
+            self.scout_area()
+        else:
+            print("Invalid choice.")
+            self.search_supplies()
 
     def fortify_school(self):
-        # This part of the story can be expanded further
         print("You decide to fortify your position within the school, setting up barricades and traps.")
         print("You must defend your stronghold against incoming waves of zombies.")
+        print("1. Set up barricades at the entrances.")
+        print("2. Set traps in strategic locations.")
+        choice = input("What will you do? (1/2): ")
+
+        if choice == "1":
+            self.set_barricades()
+        elif choice == "2":
+            self.set_traps()
+        else:
+            print("Invalid choice.")
+            self.fortify_school()
+
+    def fight_zombies(self):
+        pass  # To be implemented
+
+    def alternate_route(self):
+        pass  # To be implemented
+
+    def enter_building(self):
+        pass  # To be implemented
+
+    def scout_area(self):
+        pass  # To be implemented
+
+    def set_barricades(self):
+        pass  # To be implemented
+
+    def set_traps(self):
+        pass  # To be implemented
 
 # Starting the game
 game = Story()
