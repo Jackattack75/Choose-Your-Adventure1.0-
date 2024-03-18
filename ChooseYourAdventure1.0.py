@@ -46,65 +46,48 @@ class Story:
         self.current_enemy = None
 
     def start(self):
-        print("Welcome to the Adventure Game!")
+        print("You wake up groggily, your head pounding, to the sound of distant screams.")
+        print("Rubbing your eyes, you realize you're slouched over a desk in a dimly lit classroom.")
+        print("The room is empty, eerie, and silent except for the faint scratching at the door.")
+        print("You push open the door to find chaos outside.")
+        print("The world has been overrun by a mysterious plague, turning people into zombies.")
+        print("You need to find a way out and survive.")
         name = input("Enter your character's name: ")
         self.current_character = Character(name)
-        self.intro()
+        self.outside_school()
 
-    def intro(self):
-        print(f"Hello, {self.current_character.name}! You find yourself in a mysterious forest...")
-        self.choice1()
-
-    def choice1(self):
-        print("You encounter a fork in the road.")
-        print("1. Take the left path.")
-        print("2. Take the right path.")
-        choice = input("What will you do? (1/2): ")
+    def outside_school(self):
+        print("You step outside the school into a world engulfed in chaos.")
+        print("1. Head towards the city center.")
+        print("2. Search for supplies in nearby buildings.")
+        print("3. Hide in the school and fortify your position.")
+        choice = input("What will you do? (1/2/3): ")
 
         if choice == "1":
-            self.left_path()
+            self.city_center()
         elif choice == "2":
-            self.right_path()
+            self.search_supplies()
+        elif choice == "3":
+            self.fortify_school()
         else:
             print("Invalid choice.")
-            self.choice1()
+            self.outside_school()
 
-    def left_path(self):
-        print("You encounter a friendly villager who offers you a sword!")
-        self.current_character.weapon = Weapon("Sword", 15)
-        print("You received a Sword!")
-        self.choice2()
+    def city_center(self):
+        # This part of the story can be expanded further
+        print("You decide to head towards the city center, hoping to find survivors or assistance.")
+        print("As you make your way through the streets, you encounter hordes of zombies.")
+        print("You must fight your way through or find another route.")
 
-    def right_path(self):
-        print("You stumble upon a ferocious bear!")
-        self.current_enemy = Enemy("Bear", health=150)
-        self.battle()
+    def search_supplies(self):
+        # This part of the story can be expanded further
+        print("You choose to search for supplies in nearby buildings, scavenging for food, weapons, and shelter.")
+        print("Be cautious, as zombies may be lurking in the shadows.")
 
-    def battle(self):
-        print(f"A wild {self.current_enemy.name} appears!")
-        while self.current_character.is_alive() and self.current_enemy.is_alive():
-            print(f"Your health: {self.current_character.health} | Enemy's health: {self.current_enemy.health}")
-            print("1. Attack")
-            print("2. Run")
-            action = input("What will you do? (1/2): ")
-
-            if action == "1":
-                self.current_character.attack(self.current_enemy)
-                if self.current_enemy.is_alive():
-                    self.current_enemy.attack(self.current_character)
-            elif action == "2":
-                print("You ran away from the battle!")
-                break
-            else:
-                print("Invalid choice.")
-
-        if self.current_character.is_alive():
-            print(f"You defeated the {self.current_enemy.name}!")
-            print("You continue on your adventure...")
-            # Continue the story here
-        else:
-            print("Game Over - You were defeated!")
-            # Option to restart or end the game
+    def fortify_school(self):
+        # This part of the story can be expanded further
+        print("You decide to fortify your position within the school, setting up barricades and traps.")
+        print("You must defend your stronghold against incoming waves of zombies.")
 
 # Starting the game
 game = Story()
