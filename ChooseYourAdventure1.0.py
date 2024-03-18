@@ -57,7 +57,7 @@ class Story:
         self.outside_school()
 
     def outside_school(self):
-        print("You step outside the school into a world engulfed in chaos.")
+        print("\nYou step outside the school into a world engulfed in chaos.")
         print("1. Head towards the city center.")
         print("2. Search for supplies in nearby buildings.")
         print("3. Hide in the school and fortify your position.")
@@ -74,7 +74,7 @@ class Story:
             self.outside_school()
 
     def city_center(self):
-        print("You decide to head towards the city center, hoping to find survivors or assistance.")
+        print("\nYou decide to head towards the city center, hoping to find survivors or assistance.")
         print("As you make your way through the streets, you encounter hordes of zombies.")
         print("You must fight your way through or find another route.")
         print("1. Fight your way through.")
@@ -90,7 +90,7 @@ class Story:
             self.city_center()
 
     def search_supplies(self):
-        print("You choose to search for supplies in nearby buildings, scavenging for food, weapons, and shelter.")
+        print("\nYou choose to search for supplies in nearby buildings, scavenging for food, weapons, and shelter.")
         print("Be cautious, as zombies may be lurking in the shadows.")
         print("1. Enter the nearest building.")
         print("2. Scout the area before entering any building.")
@@ -105,7 +105,7 @@ class Story:
             self.search_supplies()
 
     def fortify_school(self):
-        print("You decide to fortify your position within the school, setting up barricades and traps.")
+        print("\nYou decide to fortify your position within the school, setting up barricades and traps.")
         print("You must defend your stronghold against incoming waves of zombies.")
         print("1. Set up barricades at the entrances.")
         print("2. Set traps in strategic locations.")
@@ -120,7 +120,7 @@ class Story:
             self.fortify_school()
 
     def fight_zombies(self):
-        print("You bravely face the zombies, ready to fight for your survival.")
+        print("\nYou bravely face the zombies, ready to fight for your survival.")
         print("Suddenly, you hear a loud roar as a wave of zombies rushes towards you!")
         print("1. Stay and fight.")
         print("2. Run away.")
@@ -135,12 +135,12 @@ class Story:
             self.fight_zombies()
 
     def alternate_route(self):
-        print("You search for an alternate route, trying to avoid direct confrontation with the zombies.")
+        print("\nYou search for an alternate route, trying to avoid direct confrontation with the zombies.")
         print("After wandering through the streets, you find a narrow alleyway that seems less infested.")
         print("You cautiously make your way through, keeping an eye out for any threats.")
 
     def enter_building(self):
-        print("You enter the nearest building, hoping to find valuable supplies.")
+        print("\nYou enter the nearest building, hoping to find valuable supplies.")
         print("As you explore the dark interior, you hear faint growling noises from deeper within the building.")
         print("1. Proceed cautiously.")
         print("2. Retreat and find another building.")
@@ -157,34 +157,34 @@ class Story:
             self.enter_building()
 
     def scout_area(self):
-        print("You cautiously scout the area, looking for any signs of danger.")
+        print("\nYou cautiously scout the area, looking for any signs of danger.")
         print("After a thorough inspection, you spot a nearby convenience store that seems promising.")
         print("You decide to head towards it, hoping to find useful supplies.")
 
     def set_barricades(self):
-        print("You set up barricades at the entrances of the school, fortifying your position.")
+        print("\nYou set up barricades at the entrances of the school, fortifying your position.")
         print("With the barricades in place, you feel safer from potential zombie attacks.")
 
     def set_traps(self):
-        print("You carefully set traps in strategic locations around the school.")
+        print("\nYou carefully set traps in strategic locations around the school.")
         print("These traps should help deter zombies and provide you with some protection.")
 
     def stay_and_fight(self):
-        print("You decide to stay and fight the oncoming wave of zombies.")
+        print("\nYou decide to stay and fight the oncoming wave of zombies.")
         print("As you prepare to engage, you see your friends from the nearby shelter rushing to your aid.")
         print("Together, you manage to fight off the zombies and secure the area.")
         print("Your friends suggest finding a safer shelter.")
         self.find_shelter()
 
     def run_away(self):
-        print("You decide to run away from the overwhelming horde of zombies.")
+        print("\nYou decide to run away from the overwhelming horde of zombies.")
         print("You sprint through the streets, desperately searching for safety.")
         print("You stumble upon an abandoned warehouse and quickly barricade the entrance.")
         print("You catch your breath, knowing you've narrowly escaped danger.")
         # Implement further story development
 
     def find_shelter(self):
-        print("You and your friends set out to find a safer shelter.")
+        print("\nYou and your friends set out to find a safer shelter.")
         print("After searching for a while, you come across an old underground bunker.")
         print("You cautiously enter the bunker, relieved to have found a secure refuge.")
         # Implement further story development
